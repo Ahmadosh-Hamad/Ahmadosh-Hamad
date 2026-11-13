@@ -1,4 +1,3 @@
-<!-- Synced from AhmadoshHamad/AhmadoshHamad. Edit it there; changes here are overwritten. -->
 ## 👋 Ahmad Hamad · أحمد حمد
 
 `DevSecOps Engineer` `Platform Engineer` `Backend / Full-Stack` `Computer Engineer`
@@ -74,15 +73,13 @@ Personal: [@AhmadoshHamad](https://github.com/AhmadoshHamad) · Work: [@Ahmadosh
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=AhmadoshHamad&theme=vue-dark&hide_border=true&background=00000000">
-    <img alt="GitHub contribution streak" src="https://streak-stats.demolab.com?user=AhmadoshHamad&hide_border=true&background=00000000">
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=Ahmadosh-Hamad&theme=vue-dark&hide_border=true&background=00000000">
+    <img alt="GitHub contribution streak" src="https://streak-stats.demolab.com?user=Ahmadosh-Hamad&hide_border=true&background=00000000">
   </picture>
 </p>
 
-<!-- per-account:start (the work profile's sync workflow points this block at the work account) -->
 <picture align="center">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ahmadosh-Hamad/Ahmadosh-Hamad/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ahmadosh-Hamad/Ahmadosh-Hamad/output/github-contribution-grid-snake.svg">
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Ahmadosh-Hamad/Ahmadosh-Hamad/output/github-contribution-grid-snake.svg">
 </picture>
-<!-- per-account:end -->
