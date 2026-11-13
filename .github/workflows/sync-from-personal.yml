@@ -1,0 +1,35 @@
+# Pulls the profile README from the personal account (AhmadoshHamad/AhmadoshHamad).
+# That repo is the source of truth: edit README.md there, not here.
+# No secrets needed: the source repo is public, and this repo's own
+# GITHUB_TOKEN commits the result.
+name: Sync from personal profile
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: sync-from-personal
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Pull README from the personal profile
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/AhmadoshHamad/AhmadoshHamad/main/README.md -o "$RUNNER_TEMP/personal-README.md"
+          python3 .github/scripts/adapt_readme.py "$RUNNER_TEMP/personal-README.md" README.md
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet && echo "Already in sync" && exit 0
+          git commit -m "Sync README from AhmadoshHamad/AhmadoshHamad"
+          git push
